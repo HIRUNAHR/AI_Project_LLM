@@ -44,7 +44,7 @@ session_metadata: Dict[str, Dict] = {}
 class LLMConfig:
     def __init__(self):
         self.base_url = "https://openrouter.ai/api/v1"
-        self.model = "deepseek/deepseek-r1-0528:free"
+        self.model = "openrouter/sonoma-dusk-alpha"
         self.api_key = os.getenv("OPENROUTER_API_KEY")
         
         if not self.api_key:
